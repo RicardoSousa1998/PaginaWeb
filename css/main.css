@@ -29,3 +29,9 @@ a:hover {
     background-image: url('images\logo.png') center center no-repeat;
     
 }
+
+.carouselItem{
+height: auto;
+max-height: 600px;
+
+}

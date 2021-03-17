@@ -1,3 +1,15 @@
+.color-1 { color: #F26D85}
+.color-2 { color: #BF214B}
+.color-3 { color: #C1D0D9}
+.color-4 { color: #0E6973}
+.color-5 { color: #0E7373}
+
+.bg-1 { background-color: #F26D85}
+.bg-2 { background-color: #BF214B}
+.bg-3 { background-color: #C1D0D9}
+.bg-4 { background-color: #0E6973}
+.bg-5 { background-color: #0E7373}
+
 .dropdown-menu.show {
     display: flex !important;
 }
@@ -20,13 +32,28 @@ max-height: 600px;
 }
 
 body {
-    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); 
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #C1D0D9 70%, #0E6973 100%); 
     font-family: 'Nunito';
 } 
-#teste {
-    background-image: url('images/bg-1.jpg');
+
+.titulos{
+    font-family: 'JetBrains Mono';
+    text-shadow: 2px 2px #00000045;;
 }
 
-.textcolor{
-    color:white;
+
+.imgserv{
+    border-radius: 50%;
+    height: auto;
+    max-height: 25vw;
+    width: auto;
+    max-width: 100%;
+    margin: auto;
+    display: block;
 }
+
+.navbar1{
+    background-color: black!important;
+}
+
+

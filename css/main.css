@@ -2,25 +2,10 @@
     display: flex !important;
 }
 
-.noticia-card {
-    max-width: 250px !important;
-    max-height: 300px !important;
-
-    cursor: pointer;
-}
 
 .logo {
     width: 46px;
 }
-
-.poll-card {
-    background-color: #f2d5ff;
-}
-
-.noticia-details-img {
-    max-height: 600px
-}
-
 
 
 .navbar-brand {

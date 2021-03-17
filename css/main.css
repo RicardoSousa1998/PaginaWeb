@@ -21,9 +21,7 @@
     max-height: 600px
 }
 
-a:hover {
-    text-decoration: none;
-}
+
 
 .navbar-brand {
     background-image: url('images\logo.png') center center no-repeat;

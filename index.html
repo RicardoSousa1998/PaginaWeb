@@ -32,7 +32,7 @@
 <body>
     <div class="container-fluid py-3 sticky-top bg-5" style="background-color: #0E737373; transition: 1s;" id="nav">
         <nav class="navbar navbar-expand-lg container">
-            <a class="navbar-brand text-white titulos" href="#">
+            <a class="navbar-brand text-white titulos" href="/">
                 <h1>Dynamic Finality</h1>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
@@ -74,27 +74,12 @@
         <div class="carousel-inner carouselItem">
             <div class="carousel-item active">
                 <img class="d-block w-100 carouselItem" src="images/c1.jpg" alt="Primeiro Slide">
-                <div class="carousel-caption ">
-                    <h5 class="titulo text-dark carousel-text">
-                        "Todos os nossos sonhos tornam-se realidade se tivermos coragem de os perseguir." - Walt disney
-                    </h5>
-                </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100 carouselItem" src="images/c1MB.png" alt="Segundo Slide">
-                <div class="carousel-caption">
-                    <h5 class="titulo text-dark carousel-text">
-                        "Eu não falhei. Eu encontrei 10000 maneiras que não funcionaram." -Thomas A. Edison
-                    </h5>
-                </div>
+                <img class="d-block w-100 carouselItem" src="images/c2.png" alt="Segundo Slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100 carouselItem" src="images/c2MB.png" alt="Terceiro Slide">
-                <div class="carousel-caption">
-                    <h5 class="titulo text-dark carousel-text">
-                        "É melhor falhar na originalidade do que ter sucesso na imitação." -Herman Melville
-                    </h5>
-                </div>
+                <img class="d-block w-100 carouselItem" src="images/c3.png" alt="Terceiro Slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -113,8 +98,8 @@
 
         <div class="container mx-auto py-4" style="background-color: #1a1a1a45;">
             <h3 class="text-center  wow animate__animated animate__fadeInDownBig titulos">QUEM SOMOS</h3>
-            <p class="text-white text-justify">Dynamic Trading é uma empresa com foco na importação e exportação de
-            máquinas e produtos para o combate ao Covid.</p>
+            <p class="text-white text-justify">A Dynamic Trading é uma empresa que se foca principalmente na importação e exportação de
+                máquinas e produtos de auxílio ao combate do vírus Covid-19.</p>
             <!-- <div class="col-md-4">
                 <div class="row d-flex justify-content-center">
                     <h5 class="wow animate__animated animate__fadeInDownBig titulos">AS NOSSAS REDES SOCIAIS</h5>
@@ -199,18 +184,21 @@
         </div>
 
     </div>
+    <!-- produtos -->
     <div class="container" id="produtos">
         <div class="row d-flex justify-content-center">
-            <h3 class="wow animate__animated animate__fadeInDownBig titulos">PRODUTOS</h3>
+            <h3 class="wow animate__animated animate__fadeInDownBig titulos">PRODUTOS</h3><BR>
+           
         </div>
         <ul class="nav nav-tabs color-1" role="tablist">
-            <li><a data-toggle="tab" class="nav-link color-2" href="#home">Mascaras</a></li>
+            <li><a data-toggle="tab" class="nav-link color-2 active" href="#home">Mascaras</a></li>
             <li><a data-toggle="tab" class="nav-link color-2" href="#menu1">Fatos e Acessorios </a></li>
             <li><a data-toggle="tab" class="nav-link color-2" href="#menu2">Maquinas</a></li>
         </ul>
 
         <div class="tab-content pt-3">
-            <div id="home" class="tab-pane fade in">
+          
+            <div id="home" class="tab-pane fade active show in">
                 <h3>Mascaras</h3>
                 <p>Temos ao dispor varios tipos de Mascaras,sejam elas Mascaras cirúrgicas ,Mascaras Comunitarias ou
                     Mascaras com respiradores </p>
@@ -258,148 +246,228 @@
             </div>
             <div id="menu1" class="tab-pane fade">
                 <h3>Fatos e Acessorios </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div id="accordion">
                             <div class="card">
-                              <div class="card-header" id="heading1">
-                                <h5 class="mb-0">
-                                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                    Roupa Protetora Azul
-                                  </button>
-                                </h5>
-                              </div>
-                          
-                              <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
-                                <div class="card-body">
-                                    <img class="imgitem" src="images/item1.png">
+                                <div class="card-header" id="heading1">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1"
+                                            aria-expanded="true" aria-controls="collapse1">
+                                            Roupa Protetora Azul
+                                        </button>
+                                    </h5>
                                 </div>
-                              </div>
+
+                                <div id="collapse1" class="collapse show" aria-labelledby="heading1"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <img class="imgitem" src="images/item1.png">
+                                    </div>
+                                </div>
                             </div>
                             <div class="card">
-                              <div class="card-header" id="heading2">
-                                <h5 class="mb-0">
-                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                    Roupa Protetora Banca
-                                  </button>
-                                </h5>
-                              </div>
-                              <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
-                                <div class="card-body">
-                                    <img  class="imgitem" src="images/item2.png">                        </div>
-                              </div>
+                                <div class="card-header" id="heading2">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                            Roupa Protetora Banca
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse2" class="collapse" aria-labelledby="heading2"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <img class="imgitem" src="images/item2.png"> </div>
+                                </div>
                             </div>
                             <div class="card">
-                              <div class="card-header" id="heading3">
-                                <h5 class="mb-0">
-                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                    Roupa Protetora Laranja
-                                  </button>
-                                </h5>
-                              </div>
-                              <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
-                                <div class="card-body">
-                                    <img  class="imgitem" src="images/item3.png">                        </div>
-                              </div>
+                                <div class="card-header" id="heading3">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                            Roupa Protetora Laranja
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse3" class="collapse" aria-labelledby="heading3"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <img class="imgitem" src="images/item3.png"> </div>
+                                </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" id="heading7">
-                                  <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                                      Roupa Protetora Laranja
-                                    </button>
-                                  </h5>
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                            Roupa Protetora Branca com Capuz
+                                        </button>
+                                    </h5>
                                 </div>
-                                <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
-                                  <div class="card-body">
-                                      <img  class="imgitem" src="images/item4.png">                        </div>
+                                <div id="collapse7" class="collapse" aria-labelledby="heading7"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <img class="imgitem" src="images/item4.png"> </div>
                                 </div>
-                              </div>
-                              <div class="card">
+                            </div>
+                            <div class="card">
                                 <div class="card-header" id="heading8">
-                                  <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                                      Roupa Protetora Laranja
-                                    </button>
-                                  </h5>
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                            Roupa Protetora Amarela
+                                        </button>
+                                    </h5>
                                 </div>
-                                <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
-                                  <div class="card-body">
-                                      <img  class="imgitem" src="images/item5.png">                        </div>
+                                <div id="collapse8" class="collapse" aria-labelledby="heading8"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <img class="imgitem" src="images/item5.png"> </div>
                                 </div>
-                              </div>
-                              <div class="card">
+                            </div>
+                            <div class="card">
                                 <div class="card-header" id="heading9">
-                                  <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-                                      Roupa Protetora Laranja
-                                    </button>
-                                  </h5>
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                            Roupa Protetora MultiColor
+                                        </button>
+                                    </h5>
                                 </div>
-                                <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion">
-                                  <div class="card-body">
-                                      <img  class="imgitem" src="images/item6.png">                        </div>
+                                <div id="collapse9" class="collapse" aria-labelledby="heading9"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <img class="imgitem" src="images/item6.png"> </div>
                                 </div>
-                              </div>
-                          </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div id="accordion2">
                             <div class="card">
-                              <div class="card-header" id="heading4">
-                                <h5 class="mb-0">
-                                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
-                                    Collapsible Group Item #1
-                                  </button>
-                                </h5>
-                              </div>
-                          
-                              <div id="collapse4" class="collapse show" aria-labelledby="heading4" data-parent="#accordion2">
-                                <div class="card-body">
-                                    <img class="imgitem" src="images/item1.png">
+                                <div class="card-header" id="heading4">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse4"
+                                            aria-expanded="true" aria-controls="collapse4">
+                                            Vestido de isolamento Azul
+                                        </button>
+                                    </h5>
                                 </div>
-                              </div>
+
+                                <div id="collapse4" class="collapse show" aria-labelledby="heading4"
+                                    data-parent="#accordion2">
+                                    <div class="card-body">
+                                        <img class="imgitem" src="images/item7.png">
+                                    </div>
+                                </div>
                             </div>
                             <div class="card">
-                              <div class="card-header" id="heading5">
-                                <h5 class="mb-0">
-                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                    Collapsible Group Item #2
-                                  </button>
-                                </h5>
-                              </div>
-                              <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion2">
-                                <div class="card-body">
-                                    <img class="imgitem" src="images/item2.png">                        </div>
-                              </div>
+                                <div class="card-header" id="heading5">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                            Vestido de isolamento Azul
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse5" class="collapse" aria-labelledby="heading5"
+                                    data-parent="#accordion2">
+                                    <div class="card-body">
+                                        <img class="imgitem" src="images/item8.png"> </div>
+                                </div>
                             </div>
                             <div class="card">
-                              <div class="card-header" id="heading6">
-                                <h5 class="mb-0">
-                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                                    Collapsible Group Item #3
-                                  </button>
-                                </h5>
-                              </div>
-                              <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion2">
-                                <div class="card-body">
-                                    <img class="imgitem" src="images/item3.png">                        </div>
-                              </div>
+                                <div class="card-header" id="heading6">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                            Outros Tipos
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse6" class="collapse" aria-labelledby="heading6"
+                                    data-parent="#accordion2">
+                                    <div class="card-body">
+                                        <img class="imgitem" src="images/item9.png"> </div>
+                                </div>
                             </div>
-                          </div>
+                            <div class="card">
+                                <div class="card-header" id="heading10">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                            Bata cirúrgica
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse10" class="collapse" aria-labelledby="heading10"
+                                    data-parent="#accordion2">
+                                    <div class="card-body">
+                                        <img class="imgitem" src="images/item10.png"> </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>  
-                
-            
+                    <div class="col-md-4">
+                        <div id="accordion3">
+                            <div class="card">
+                                <div class="card-header" id="heading11">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse11"
+                                        aria-expanded="true" aria-controls="collapse11">
+                                            Cobreturas de Sapatos
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse11" class="collapse show" aria-labelledby="heading11"
+                                    data-parent="#accordion3">
+                                    <div class="card-body">
+                                        <img class="imgitem" src="images/item11.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="heading12">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                                            Outros
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse12" class="collapse" aria-labelledby="heading12"
+                                    data-parent="#accordion3">
+                                    <div class="card-body">
+                                        <img class="imgitem" src="images/item12.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
             <div class="popup" style="display:none;"></div>
             <div id="menu2" class="tab-pane fade">
                 <h3>Maquinas</h3>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
                     totam rem aperiam.</p>
+                <div class="row my-2">
+                    <img class="imground col-md-4" src="images/item13.png">
+                    <img class="imground col-md-4" src="images/item14.png">
+                    <img class="imground col-md-4" src="images/item15.png">
+                </div>
+                <div class="row my-2">
+                    <img class="imground col-md-4" src="images/item16.png">
+                    <img class="imground col-md-4" src="images/item17.png">
+                    <img class="imground col-md-4" src="images/item18.png">
+                </div>
             </div>
         </div>
-      
+
 
     </div>
     </div>
@@ -407,27 +475,30 @@
 
 
     <!-- contactos -->
-    <div class="container-fluid py-4 mt-4" id="contactos"
+    <div class="container-fluid mt-4" id="contactos"
         style="background:url('images/newsletter.jpg');background-position: center; background-repeat: no-repeat; background-size: cover">
-        <div class="row d-flex justify-content-center">
-            <h3 class="wow animate__animated animate__fadeInDownBig titulos">CONTACTOS</h3>
+        <div class="container text-center justify-content-center py-4"   style="background-color: #1a1a1a45;">
+            <h3 class="wow animate__animated animate__fadeInDownBig titulos mb-0">CONTACTOS</h3>
         </div>
-        <div class="container mx-auto row py-4">
-            <div class="col-md-4">
+        <div class="container mx-auto row py-4"  style="background-color: #1a1a1a45;">
+            <div class="col-md-4 p-2 rounded" style="background-color: #ffffff70; height: max-content;">
                 <p><i class="fa fa-phone color-2 mr-2 wow animate__animated animate__fadeInDown "
                         style="font-size: 2em;"></i><strong
-                        class="wow animate__animated animate__fadeInDown">Contacto:</strong><br>9** *** ***</p>
+                        class="wow animate__animated animate__fadeInDown">Contacto:</strong><br>+351 910518099</p>
+                        <p><i class="fa fa-whatsapp color-2 mr-2 wow animate__animated animate__fadeInDown "
+                            style="font-size: 2em;"></i><strong
+                            class="wow animate__animated animate__fadeInDown">WhatsApp:</strong><br>+55 81999220051</p>
                 <p><i class="fa fa-at color-2 mr-2 wow animate__animated animate__fadeInDown"
                         style="font-size: 2em;"></i><strong
-                        class="wow animate__animated animate__fadeInDown">Email:</strong><br>email@email.com</p>
+                        class="wow animate__animated animate__fadeInDown">Email:</strong><br>contact@dynamic-trading.eu</p>
                 <p><i class="fa fa-globe color-2 mr-2 wow animate__animated animate__fadeInDown"
                         style="font-size: 2em;"></i><strong
-                        class="wow animate__animated animate__fadeInDown">Localização:</strong><br>Rua Rua<br />
-                    2000-000 Setubal <br />
+                        class="wow animate__animated animate__fadeInDown">Localização:</strong><br>Calçada da Ajuda 131 - Frente B <br />
+                        1300-008 Lisboa <br />
                     Portugal</p>
             </div>
             <div class="col-md-8">
-                <form>
+                <form enctype="text/plain" id="sendEmail">
                     <h5 class="wow animate__animated animate__fadeInDown">Entre em contacto</h5>
                     <div class="form-group">
                         <label for="nome">Nome</label>
@@ -446,7 +517,7 @@
                         <label for="corpo">Conteudo</label>
                         <textarea class="form-control" id="corpo" rows="5"></textarea>
                     </div>
-                    <button type="submit" class="btn bg-2 color-3">Enviar Mensagem</button>
+                    <button type="submit" value="send"  class="btn bg-2 color-3">Enviar Mensagem</button>
                 </form>
             </div>
         </div>
@@ -454,7 +525,26 @@
     <div class="container-fluid text-center text-white p-4" style="background-color: #00000073;">
         <span>&copy 2021 - GlobalSeven</span>
     </div>
-
+    <div id="photo-full-size">
+        
+        <img />
+        <span class="close"><i class="fa fa-times"></i></span>
+    </div>
+    <!-- GetButton.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "123456789", // WhatsApp number
+            call_to_action: "Envia-nos uma mensagem", // Call to action
+            position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /GetButton.io widget -->
 </body>
 
 <script>
@@ -466,8 +556,19 @@
             nav.classList.remove("navbar1");
         }
     }
-
+    var form = document.getElementById("sendEmail");
+    form.onsubmit = function () {
+        form.action = "mailto:email@email.com?subject=" + document.getElementById("Assunto").value + "&body=" + document.getElementById("nome").value + " <" + document.getElementById("email").value + "> " + document.getElementById("corpo").value;
+        console.log(form.action);
+    }
+    $("img").on("click", function (e) {
+        document.getElementById("photo-full-size").style.display = "block";
+        document.querySelector("#photo-full-size > img").src = e.target.src;
+    })
   
+    $(".close").on("click", function (e) {
+        document.getElementById("photo-full-size").style.display = "none";
+    })
 </script>
 
 </html>

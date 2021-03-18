@@ -10,6 +10,13 @@
 .bg-4 { background-color: #0E6973}
 .bg-5 { background-color: #0E7373}
 
+.color-6{background: orange;
+color:black;}
+
+.color-6:hover{
+    background: darkorange;
+color:black;
+}
 .dropdown-menu.show {
     display: flex !important;
 }
@@ -52,8 +59,27 @@ body {
     display: block;
 }
 
-.navbar1{
-    background-color: black!important;
+.imgitem{
+    height: auto;
+    max-height: 25vw;
+    width: auto;
+    max-width: 100%;
+    margin: auto;
+    display: block;
 }
 
+.navbar1{
+    background-color: #0E7373!important;
+    transition: 1s;
+}
+.popup{
+    position:absolute;
+    width:30px;
+    height:30px;
+    z-index: 100;
+}
 
+.carousel-text {
+    background-color: #f0f8ff78;
+    text-shadow: 1px 1px #0000004a;
+}

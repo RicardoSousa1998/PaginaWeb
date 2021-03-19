@@ -28,12 +28,12 @@
 
     <title>DYNAMIC TRADING</title>
 </head>
-
 <body>
-    <div class="container-fluid py-3 sticky-top bg-5" style="background-color: #0E737373; transition: 1s;" id="nav">
+    <div class="container-fluid py-3 sticky-top" style="background-color: #78C7EB73; transition: 1s;" id="nav">
         <nav class="navbar navbar-expand-lg container">
             <a class="navbar-brand text-white titulos" href="/">
-                <h1>Dynamic Trading</h1>
+                <!-- <h1>Dynamic Trading</h1> -->
+                <img class="logo" id="logo" src="images/logo dynamic.png">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -116,8 +116,7 @@
                     <div class="card" style="background-color: #1a1a1a45;">
                         <div class="card-horizontal">
                             <div class="i per">
-                                <img class="mr-2" src="images/about.jpg" style="float: left;"
-                                    alt="Card image cap">
+                                <img class="mr-2" src="images/about.jpg" style="float: left;" alt="Card image cap">
                                 <p class="text-white text-justify p-2">A Dynamic Trading é uma empresa que se foca
                                     principalmente na importação e exportação de
                                     máquinas e produtos de auxílio ao combate do vírus Covid-19.</p>
@@ -143,14 +142,14 @@
 
         </div>
         <ul class="nav nav-tabs color-1" role="tablist">
-            <li><a data-toggle="tab" class="nav-link color-2 active" href="#home">Máscaras</a></li>
+            <li><a data-toggle="tab" class="nav-link color-2 active" href="#menu2">Máquinas</a></li>
             <li><a data-toggle="tab" class="nav-link color-2" href="#menu1">Fatos e Acessórios </a></li>
-            <li><a data-toggle="tab" class="nav-link color-2" href="#menu2">Máquinas</a></li>
+            <li><a data-toggle="tab" class="nav-link color-2" href="#home">Máscaras</a></li>
         </ul>
 
         <div class="tab-content pt-3">
 
-            <div id="home" class="tab-pane fade active show in">
+            <div id="home" class="tab-pane fade in">
                 <h3>Máscaras</h3>
                 <p>Temos ao dispor vários tipos de máscaras, sejam elas máscaras cirúrgicas, máscaras comunitárias ou
                     máscaras com respiradores.</p>
@@ -198,8 +197,9 @@
             </div>
             <!-- Fatos e Acessorios -->
             <div id="menu1" class="tab-pane fade">
-                <h3>Fatos e  Acessórios </h3>
-                <p>Temos ao dispor vários tipos de Fatos E Acessórios sejam eles fatos protectores, vestiditos de isolamento entre outros</p>
+                <h3>Fatos e Acessórios </h3>
+                <p>Temos ao dispor vários tipos de fatos e acessórios, sejam eles fatos protetores, vestidos de
+                    isolamento, entre outros.</p>
                 <div class="row">
                     <div class="col-md-4">
                         <div id="accordion">
@@ -405,9 +405,10 @@
             </div>
             <!-- Máquinas -->
             <div class="popup" style="display:none;"></div>
-            <div id="menu2" class="tab-pane fade">
+            <div id="menu2" class="tab-pane  active show fade">
                 <h3>Máquinas</h3>
-                <p>Temos ao dispor várias Máquina de produção de protecções, como Maquinas para fazer mascaras, Maquina para fazer cobertura de sapatos</p>
+                <p>Temos ao dispor várias Máquina de produção de protecções, como Maquinas para fazer mascaras, Maquina
+                    para fazer cobertura de sapatos</p>
                 <div class="row my-2">
                     <img class="imground col-md-4" src="images/Machines/item13.png">
                     <img class="imground col-md-4" src="images/Machines/item14.png">
@@ -477,7 +478,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid text-center text-white p-4" style="background-color: #00000073;">
+    <div class="container-fluid text-center text-white p-4 bg-5">
         <span>&copy 2021 - GlobalSeven</span>
     </div>
     <div id="photo-full-size">
@@ -505,7 +506,7 @@
             };
             var x = document.getElementsByTagName('script')[0];
             x.parentNode.insertBefore(s, x);
-            var d = document.getElementsByClassName('dfBDQI').style =" display: none !important";
+            var d = document.getElementsByClassName('dfBDQI').style = " display: none !important";
         })();
     </script>
     <!-- /GetButton.io widget -->
@@ -521,17 +522,19 @@
             nav.classList.remove("navbar1");
         }
     }
-    
+
     // form email
     var form = document.getElementById("sendEmail");
     form.onsubmit = function () {
-        form.action = "mailto:contact@dynamic-trading.eu?subject=" + document.getElementById("Assunto").value + "&body=" +
+        form.action = "mailto:contact@dynamic-trading.eu?subject=" + document.getElementById("Assunto").value +
+            "&body=" +
             document.getElementById("nome").value + " <" + document.getElementById("email").value + "> " + document
             .getElementById("corpo").value;
         console.log(form.action);
     }
     // zoom img
     $("img").on("click", function (e) {
+        if (e.target.id == "logo") { return true; }
         document.getElementById("photo-full-size").style.display = "block";
         document.querySelector("#photo-full-size > img").src = e.target.src;
     })

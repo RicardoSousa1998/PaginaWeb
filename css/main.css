@@ -111,7 +111,6 @@ body {
   margin-bottom: 20vh;
 }
 
-/* The Close Button */
 .close {
     position: absolute;
     top: 15px;
@@ -120,11 +119,32 @@ body {
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #bbb;
+}
+
+.close:hover,
+.close:focus {
+color: #bbb;
+text-decoration: none;
+cursor: pointer;
+}
+
+a:hover {
+    color: unset;
     text-decoration: none;
-    cursor: pointer;
-  }
+}
+
+.nav-link.active {
+    color: #fff !important;
+    background-color: #0e7373!important;
+    border-color: #0e7373!important;
+}
+
+.btn-link {
+    color: #BF214B;
+}
+
+.btn-link:hover,
+.btn-link:not(.btn-link.collapsed)
+ {
+    color: #0e7373;
+}
